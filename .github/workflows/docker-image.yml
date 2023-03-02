@@ -22,7 +22,7 @@ jobs:
       with:
         major_pattern: "major:" #si mi commit tiene esta palabra, es un cambio en la version mayor
         minor_pattern: "feat:" #si mi commit tiene esta palabra, es un cambio en la version menor
-        format: "${major}.${minor}.${patch}" #formato que se le da al nombre de la version generada
+        format: "${major}.${minor}.${patch}"
         #format: "${major}.${minor}.${patch}-prerelease${increment}" #formato que se le da al nombre de la version generada
       id: version # id para referenciarlo en otros steps
     - name: Docker login
